@@ -1,0 +1,413 @@
+/* =========================================================
+   SKANDA - SMK NEGERI 2 KARANGANYAR
+   Tema Warna: Dark Blue, Gold (Emas), Hitam
+   ========================================================= */
+
+:root {
+    --sk-biru-tua: #061a33;
+    --sk-biru: #0d2b52;
+    --sk-biru-terang: #14417a;
+    --sk-gold: #d4af37;
+    --sk-gold-terang: #e8c76b;
+    --sk-hitam: #14140f;
+    --sk-hitam-soft: #1f1f1a;
+    --sk-krem: #f8f6ef;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background-color: var(--sk-krem);
+    color: #212121;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-skanda {
+    background: linear-gradient(90deg, var(--sk-hitam) 0%, var(--sk-biru-tua) 100%);
+    border-bottom: 3px solid var(--sk-gold);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navbar-skanda .navbar-brand {
+    color: var(--sk-gold) !important;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding: 0;
+    margin-right: 1.5rem;
+}
+
+.navbar-skanda .navbar-brand small {
+    display: block;
+    color: #fff;
+    font-size: .65rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.navbar-skanda .nav-link {
+    color: #f1f1f1 !important;
+    font-weight: 500;
+    margin: 0 4px;
+    padding: 10px 12px !important;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-skanda .nav-link:hover,
+.navbar-skanda .nav-link.active {
+    color: var(--sk-gold) !important;
+    border-bottom: 2px solid var(--sk-gold);
+}
+
+.navbar-skanda .btn-daftar {
+    background-color: var(--sk-gold);
+    color: var(--sk-hitam);
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-left: 8px;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-skanda .btn-daftar:hover {
+    background-color: var(--sk-gold-terang);
+    color: var(--sk-hitam);
+}
+
+/* Jarak konten terhadap navbar fixed-top, disesuaikan dengan tinggi navbar + padding baru */
+.site-content {
+    padding-top: 84px;
+}
+
+@media (max-width: 991.98px) {
+    .site-content {
+        padding-top: 78px;
+    }
+}
+
+
+/* ===== HERO ===== */
+.hero-skanda {
+    background: linear-gradient(135deg, var(--sk-biru-tua) 0%, var(--sk-biru) 60%, var(--sk-hitam) 130%);
+    color: #fff;
+    padding: 90px 20px 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-skanda::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--sk-gold), var(--sk-gold-terang), var(--sk-gold));
+}
+
+.hero-skanda h1 {
+    font-weight: 800;
+}
+
+.hero-skanda .text-gold {
+    color: var(--sk-gold);
+}
+
+.hero-skanda .lead {
+    color: #e7e7e7;
+}
+
+.btn-sk-gold {
+    background-color: var(--sk-gold);
+    border: none;
+    color: var(--sk-hitam);
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-sk-gold:hover {
+    background-color: var(--sk-gold-terang);
+    color: var(--sk-hitam);
+    transform: translateY(-2px);
+}
+
+.btn-sk-outline {
+    border: 2px solid var(--sk-gold);
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 26px;
+    border-radius: 30px;
+    background: transparent;
+    transition: all .2s ease-in-out;
+}
+
+.btn-sk-outline:hover {
+    background: var(--sk-gold);
+    color: var(--sk-hitam);
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title h2 {
+    font-weight: 800;
+    color: var(--sk-biru-tua);
+}
+
+.section-title .garis-gold {
+    width: 80px;
+    height: 4px;
+    background: var(--sk-gold);
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+/* ===== CARDS ===== */
+.card-skanda {
+    border: none;
+    border-top: 4px solid var(--sk-gold);
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    transition: transform .2s ease-in-out;
+}
+
+.card-skanda:hover {
+    transform: translateY(-4px);
+}
+
+.bg-biru {
+    background-color: var(--sk-biru) !important;
+}
+
+.bg-biru-tua {
+    background-color: var(--sk-biru-tua) !important;
+}
+
+.bg-hitam {
+    background-color: var(--sk-hitam) !important;
+}
+
+.text-biru {
+    color: var(--sk-biru-tua) !important;
+}
+
+.text-gold {
+    color: var(--sk-gold) !important;
+}
+
+/* ===== FOOTER ===== */
+.footer-skanda {
+    background: var(--sk-hitam);
+    color: #ddd;
+    padding: 40px 0 20px;
+    border-top: 3px solid var(--sk-gold);
+}
+
+.footer-skanda h5 {
+    color: var(--sk-gold);
+    font-weight: 700;
+}
+
+.footer-skanda a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-skanda a:hover {
+    color: var(--sk-gold);
+}
+
+.footer-skanda hr {
+    border-color: #444;
+}
+
+/* ===== FORM PENDAFTARAN ===== */
+.form-skanda {
+    max-width: 720px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.form-skanda .form-header {
+    background: linear-gradient(90deg, var(--sk-biru-tua), var(--sk-biru));
+    color: #fff;
+    padding: 24px 30px;
+    border-bottom: 4px solid var(--sk-gold);
+}
+
+.form-skanda .form-body {
+    padding: 30px;
+}
+
+.form-skanda label {
+    font-weight: 600;
+    color: var(--sk-biru-tua);
+    margin-top: 12px;
+}
+
+.form-skanda .form-control,
+.form-skanda .form-select {
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+
+.form-skanda .form-control:focus,
+.form-skanda .form-select:focus {
+    border-color: var(--sk-biru);
+    box-shadow: 0 0 0 .2rem rgba(15,107,63,.15);
+}
+
+.form-skanda .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.form-skanda .invalid-feedback {
+    display: block;
+}
+
+/* ===== LOGIN ADMIN ===== */
+.login-skanda {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--sk-hitam) 0%, var(--sk-biru-tua) 100%);
+    padding: 20px;
+}
+
+.login-box {
+    background: #fff;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.35);
+    overflow: hidden;
+}
+
+.login-box .login-top {
+    background: var(--sk-hitam);
+    border-bottom: 4px solid var(--sk-gold);
+    text-align: center;
+    padding: 26px 20px 18px;
+    color: var(--sk-gold);
+}
+
+.login-box .login-body {
+    padding: 28px 30px 32px;
+}
+
+/* ===== ADMIN DASHBOARD ===== */
+.admin-sidebar {
+    background: var(--sk-hitam);
+    min-height: 100vh;
+    color: #eee;
+}
+
+.admin-sidebar .brand {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    color: var(--sk-gold);
+    font-weight: 700;
+}
+
+.admin-sidebar a {
+    color: #ddd;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+}
+
+.admin-sidebar a:hover,
+.admin-sidebar a.active {
+    background: rgba(212,175,55,.1);
+    color: var(--sk-gold);
+    border-left: 4px solid var(--sk-gold);
+}
+
+.stat-card {
+    border-radius: 10px;
+    padding: 22px;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,.1);
+}
+
+.stat-card.biru { background: linear-gradient(135deg, var(--sk-biru-tua), var(--sk-biru)); }
+.stat-card.gold { background: linear-gradient(135deg, #a5811f, var(--sk-gold)); color: var(--sk-hitam); }
+.stat-card.hitam { background: linear-gradient(135deg, #000, var(--sk-hitam-soft)); }
+
+.badge-menunggu { background-color: #6c757d; }
+.badge-diterima { background-color: var(--sk-biru); }
+.badge-ditolak { background-color: #b02a37; }
+
+.table-skanda thead {
+    background: var(--sk-biru-tua);
+    color: #fff;
+}
+
+/* ===== HALAMAN JURUSAN ===== */
+.jurusan-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    transition: transform .2s ease-in-out;
+    height: 100%;
+}
+
+.jurusan-card:hover {
+    transform: translateY(-6px);
+}
+
+.jurusan-card .jurusan-top {
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.jurusan-card .jurusan-top i {
+    font-size: 2.6rem;
+}
+
+.jurusan-card .jurusan-body {
+    padding: 22px;
+    background: #fff;
+}
+
+/* Warna identitas tiap jurusan */
+/* Warna identitas jurusan (generik per-warna, bisa dipilih admin saat edit) */
+.jurusan-biru    { background: linear-gradient(135deg, #0d47a1, #1976d2); }
+.jurusan-oranye  { background: linear-gradient(135deg, #b45309, #f59e0b); }
+.jurusan-merah   { background: linear-gradient(135deg, #7f1d1d, #dc2626); }
+.jurusan-hijau   { background: linear-gradient(135deg, #14532d, #16a34a); }
+
+.text-jurusan-biru    { color: #1976d2 !important; }
+.text-jurusan-oranye  { color: #f59e0b !important; }
+.text-jurusan-merah   { color: #dc2626 !important; }
+.text-jurusan-hijau   { color: #16a34a !important; }
+
+.badge-jurusan {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.jurusan-detail-header {
+    color: #fff;
+    padding: 60px 20px 50px;
+}
+
+/* ===== ADMIN: EDIT JURUSAN ===== */
+.color-preview {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.color-white { background-color: #fff; border: 1px solid #ccc; }
